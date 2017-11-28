@@ -12,6 +12,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'rails-ujs', '~> 5.1.0.beta1'
 gem 'jquery-rails'
+gem 'bcrypt'
 
 group :development, :test do
   gem 'byebug', platform: :mri
@@ -20,6 +21,8 @@ group :development, :test do
   gem 'pry'
   gem 'shoulda-matchers'
   gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'simplecov', require: false
 end
 
 group :development do

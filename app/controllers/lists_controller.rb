@@ -1,4 +1,5 @@
 class ListsController < ApplicationController
+  before_action :authorize, only: [:show]
   def index
     @lists = List.all
     render :index
